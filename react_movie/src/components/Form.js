@@ -1,6 +1,6 @@
 
 
-function Form(props){
+export default function Form(props){
     return(<div>
         <form>
             <input />
@@ -8,5 +8,3 @@ function Form(props){
         </form>
     </div>)
 }
-
-export default Form
