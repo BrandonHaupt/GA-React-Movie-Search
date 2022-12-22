@@ -7,6 +7,7 @@ export default function MovieDisplay( {movie} ) {
             <div class="display">
                 <div className="">
                     <h1>{movie.Title}</h1>
+                    <h2>{movie.Genre}</h2>
                     <h2>{movie.Year}</h2>
                     <h3>{movie.Rated}</h3>
                 </div>
@@ -27,6 +28,7 @@ export default function MovieDisplay( {movie} ) {
     }
 
     //! This says if loaded it will run loaded but if false run loading function
+    //! This is called Short Hand Ternary Operator
     return movie ? loaded() : loading()
     
 }
