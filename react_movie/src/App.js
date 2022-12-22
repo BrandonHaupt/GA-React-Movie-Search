@@ -24,12 +24,14 @@ function App() {
     setMovie(data)
   }
 
-  return (<div class='App'>
+  return (
+    <div class='App'>
 
-    {/* moviesearch is a prop which is used in the form component */}
-    <Form moviesearch={getMovie}/>
-    <MovieDisplay/>
-  </div>);
+      {/* moviesearch is a prop which is used in the form component */}
+      <Form moviesearch={getMovie}/>
+      <MovieDisplay movie={movie}/>
+    </div>
+  );
 }
 
 export default App;
