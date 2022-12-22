@@ -4,7 +4,7 @@ export default function MovieDisplay( {movie} ) {
     //! This will only run if we have the data for the movie
     const loaded = () => {
         return(
-            <div class="display">
+            <div className="display">
                 <div className="">
                     <h1>{movie.Title}</h1>
                     <h2>{movie.Genre}</h2>
